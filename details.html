@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+            cursor: pointer;
+            width: 500px;
+        }
+
+        .control-icon-close {
+            display: none;
+        }
+
+        details[open] .control-icon-close {
+            display: initial;
+            transition: .3s ease;
+        }
+
+        details[open] .control-icon-expand {
+            display: none;
+        }
+
+
+    </style>
+    
+</head>
+<body>
+<details>
+    <summary>Some text
+        <img    class="control-icon control-icon-expand"
+                src="./images/icons8-facebook-f.svg" alt="facebook">
+        <img    class="control-icon control-icon-close"
+                src="./images/twitter.svg" alt="twitter">
+    </summary>
+    <p>Some more text</p>
+</details>
+</body>
+</html>

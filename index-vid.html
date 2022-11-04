@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Ivan Melnyk - Links</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', ()=>{
+            VANTA.BIRDS({
+                el: "#vanta",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color1: 0xffffff,
+                birdSize: 1.70,
+                wingSpan: 40.00,
+                separation: 100.00,
+                alignment: 79.00,
+                quantity: 2.00,
+                cohesion: 5.00,
+                backgroundAlpha: 0.0
+            })
+        })
+
+        const main = document.querySelector('main')
+        console.log('main: ' , main)
+    </script>
+</head>
+<body>
+<div id="vanta"></div>
+<video autoplay muted loop playsinline>
+    <source src="./images/bg.mp4" type="video/mp4; codecs=hvc1">
+    <source src="./images/bg.webm" type="video/webm; codecs=vp9">
+</video>
+<main>
+
+    <header>
+        <img src="./images/ivan.jpg" alt="Ivan - creator">
+        <h1>
+            @t3nna
+        </h1>
+    </header>
+    <ul>
+        <li>
+            <a href="https://t3nna.vercel.app/">
+                <img src="./images/youtube.svg" alt="home">
+                Official Website
+            </a>
+        </li>
+        <li>
+            <a href="mailto:webmaster@t3nna1001@gmail.com">
+                <img src="./images/mail.svg" alt="email">
+                Email
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/t3nna">
+                <img src="./images/git.svg" alt="github">
+                GitHub
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/t3nnna">
+                <img src="./images/twitter.svg" alt="twitter">
+                Twitter
+            </a>
+        </li>
+
+    </ul>
+
+</main>
+
+</body>
+</html>
